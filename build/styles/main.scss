@@ -1,0 +1,9 @@
+@import "base/_reset";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+h2 {
+  font-family: $coustard;
+  font-weight: 400;
+}

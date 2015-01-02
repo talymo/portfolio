@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+deploy/
+output/
+
+npm-debug.log
+.DS_Store
+.sass-cache
+.sublime-grunt.cache
+.idea
