@@ -7,12 +7,12 @@ Instructions:
 5. Open http://localhost:8181 in your browser and relish in the awesomeness that I have created.
 
 Adding New Bower Packages
-  1. go to your git bash and type in bower install --save-dev <package-name>
+  1. go to your git bash and type in bower install --save-dev &lt;package-name&gt;
   2. you will have to ctrl-c out of the server so that you can install the bower dependency and have it integrated into the new build system.
   3. once you are done, run gulp again
   
 Adding New Node Packages
-  1. go to your git bash and type in npm install --save-dev &gt;package-name&lt;
+  1. go to your git bash and type in npm install --save-dev &lt;package-name&gt;
   2. if you need a gulp task to convert these files or do anything else to them, you will have to follow the package documentation on setting that up.
   
 Adding New Jade, Sass, Coffee and images
