@@ -22,8 +22,8 @@ Tips:
   - If you add new bower or node packages, or if you delete existing ones, go ahead and delete the deploy folder. It will reappear on build. When you delete the deploy folder it will remove all instances of old code that the build process could be hanging on to. I plan on implementing an automatic delete task in the future so until that is done, this will help you keep things fresh.
   - If you are adding new gulp tasks and something just isn't working, make sure you take a look at the code around you in the file and see how the tasks relate to one another. The markup, styles, scripts and images file depend on the bowered task to be done before they start, so keep that in mind when adding more tasks to the project. 
   
-LiveReload
-  LiveReload will watch changes in your images folder, markup folder, styles folder and scripts folder. When it detects changes it will reload the browser for you. For the markup, styles, and scripts folder, this will happen on save. 
+LiveReload:
+  - LiveReload will watch changes in your images folder, markup folder, styles folder and scripts folder. When it detects changes it will reload the browser for you. For the markup, styles, and scripts folder, this will happen on save. 
 
 I will be adding more features in the future as I see fit. If you see something that I am doing that is completely stupid or could be done better, let me know! 
 
