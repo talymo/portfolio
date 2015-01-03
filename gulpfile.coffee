@@ -35,7 +35,10 @@ gulp.task 'bowered', ['build'], ->
 
 # build out the jade files
 gulp.task 'markup', ['bowered'], ->
-	gulp.src './build/markup/*.jade'
+	gulp.src [
+		"./build/markup/**/*.jade"
+		"!./build/markup/partials/*.jade"
+	]
 		.pipe plumber()
 		.pipe jade({pretty: true})
 		.pipe gulp.dest './deploy'
