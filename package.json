@@ -1,10 +1,10 @@
 {
-  "name": "BarkShack",
+  "name": "Giggle",
   "version": "1.0.0",
-  "description": "BarkShack Website 2015",
+  "description": "Giggle Framework",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/tMoe/barkshack.git"
+    "url": "https://gitlab.com/talymo/giggle.git"
   },
   "author": "Tabetha Moe",
   "license": "MIT",
