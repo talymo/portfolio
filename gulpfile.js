@@ -54,7 +54,7 @@ gulp.task('styles', ['bowered'], function() {
 });
 
 gulp.task('images', ['bowered'], function() {
-    return gulp.src('./build/images/*').pipe(plumber()).pipe(image()).pipe(gulp.dest('./deploy/images')).pipe(connect.reload());
+    return gulp.src('./build/images/**/*').pipe(plumber()).pipe(image()).pipe(gulp.dest('./deploy/images')).pipe(connect.reload());
 });
 
 gulp.task('scripts', ['bowered'], function() {
