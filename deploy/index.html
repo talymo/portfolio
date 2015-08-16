@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yourApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giggle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:js-->
+    <script src="vendor/modernizr/modernizr.js"></script>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/WeakMap/WeakMap.js"></script>
+    <script src="vendor/pointerevents-polyfill/pointerevents.min.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/gesture.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/directive/ngClick.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/directive/ngDrag.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/directive/ngHold.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/directive/ngSwipe.js"></script>
+    <script src="vendor/angular-gesture/ngGesture/directive/ngTouch.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.js"></script>
+    <!-- endbower-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/mainController.js"></script>
+    <style>
+      @import url('http://fonts.googleapis.com/css?family=Coustard:400,900');
+      @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,700,300,600italic,700italic,900,900italic,300italic,200italic,200');
+      @import url('http://fonts.googleapis.com/css?family=Rock+Salt');
+      @import url('styles/main.css');
+    </style>
+  </head>
+  <body ng-controller="homeController">
+    <section id="intro" class="container">
+      <div class="row">
+        <div id="header" class="col-xs-12">
+          <h1>Meet Tabetha</h1>
+        </div>
+        <div id="bio" class="col-xs-12">
+          <div class="image"><img src="images/tabethaMoe.jpg" alt="Tabetha Moe photo"></div>
+          <div class="bio">
+            <h5>I am a Senior Front-End Web Developer with a passion for pushing the envelope and learning new things. I love teaching code to people interested in learning to program. Below I have listed some of the projects I have worked on both at my full-time job and as a freelance developer. I've also included a few of the things I do in my spare time and some concept projects I am working on!</h5><br>
+            <h5>I am also a regular streamer on LiveCoding.tv where I teach my followers AngularJS, SASS and Jade every Sunday at 5pm as well as stream myself coding freelance projects. I answer any questions my followers might have and also help refine their code and fix bugs in it. You can watch my stream here at <a href="http://www.livecoding.tv/talymo" target="_blank">LiveCoding.tv</a>.</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fulltime">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2>Serious Stuff</h2>
+          <div class="projects">
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Discover South Carolina</h5>
+              </div>
+              <div class="projectImage"><img src="images/southCarolina1.png" alt="South Carolina"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://discoversouthcarolina.com/" target="_blank">DiscoverSouthCarolina.com</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Mello Yello</h5>
+              </div>
+              <div class="projectImage"><img src="images/melloYello.jpg" alt="Mello Yello"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="https://web.archive.org/web/20140101081032/https://www.melloyello.com/" target="_blank">MelloYello.com</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Every Drop Water by Whirlpool</h5>
+              </div>
+              <div class="projectImage"><img src="images/everydropwater.png" alt="Every Drop Water by Whirlpool"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="https://everydropwater.com/" target="_blank">EveryDropWater.com</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>SFNTC</h5>
+              </div>
+              <div class="projectImage"><img src="images/sfntc.png" alt="SFNTC"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="https://sfntc.com/" target="_blank">SFNTC.com</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Lucky Hooker Fishing</h5>
+              </div>
+              <div class="projectImage"><img src="images/luckyHooker.png" alt="Lucky Hooker Fishing"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://www.luckyhookerfishing.com/" target="_blank">LuckyHookerFishing.com</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Barkshack</h5>
+              </div>
+              <div class="projectImage"><img src="images/barkshack.png" alt="Barkshack"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://thebarkshack.com/" target="_blank">Barkshack.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="freelance">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2>Silly Stuff</h2>
+          <div class="projects">
+            <div class="project col-xs-12 col-sm-6 col-lg-4">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Quote App Prototype</h5>
+              </div>
+              <div class="projectImage"><img src="images/quoteApp.png" alt="Quote App"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://codepen.io/talymo32/pen/aORoXg" target="_blank">Quote Me</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6 col-lg-4">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Google Image Search Replication</h5>
+              </div>
+              <div class="projectImage"><img src="images/googleImage.png" alt="Google Image"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://codepen.io/talymo32/pen/KpbrbB" target="_blank">Google Image Search</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6 col-lg-4">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Live Weather App Prototype</h5>
+              </div>
+              <div class="projectImage"><img src="images/liveWeather.png" alt="Live Weather App"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://codepen.io/talymo32/pen/eNPyQR" target="_blank">Live Weather App</a>
+              </div>
+            </div>
+            <div class="project col-xs-12 col-sm-6 col-lg-4">
+              <div class="projectName">
+                <h4>Name:</h4>
+                <h5>Dream Interpreter</h5>
+              </div>
+              <div class="projectImage"><img src="images/dreamInterpreter.png" alt="Dream Interpreter"></div>
+              <div class="projectLink">
+                <h4>Link:</h4><a href="http://www.slicedd.com/dream-guide/" target="_blank">Dream Interpretar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="wips">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2>Explorations</h2>
+        </div>
+        <div class="projects">
+          <div class="project col-xs-12 col-sm-6">
+            <div class="projectName">
+              <h4>Name:</h4>
+              <h5>Jarvis AI</h5>
+            </div>
+            <div class="projectImage"><iframe width="100%" height="315" src="https://www.youtube.com/embed/MUqodN2aytM" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+          <div class="project col-xs-12 col-sm-6">
+            <div class="projectName">
+              <h4>Name:</h4>
+              <h5>Arduino Hacking</h5>
+            </div>
+            <div class="projectImage"><iframe width="100%" height="315" src="https://www.youtube.com/embed/8k-xjRtFtBs" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+          <div class="project col-xs-12 col-sm-6">
+            <div class="projectName">
+              <h4>Name:</h4>
+              <h5>Piano Glove</h5>
+            </div>
+            <div class="projectImage"><iframe width="100%" height="315" src="https://www.youtube.com/embed/KU8oadiDsUg" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
