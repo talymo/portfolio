@@ -3,7 +3,110 @@
 @import "helpers/mixins";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-h2 {
-  font-family: $coustard;
-  font-weight: 400;
+html {
+
+  body {
+    background-color: $soapy-bath-water;
+    font-family: $coustard;
+    color: $night-sky;
+
+    #intro {
+      padding-bottom: 40px;
+
+      #header {
+        border-bottom: 3px solid #ccc;
+        height: 38px;
+        text-align: center;
+        padding: 0;
+
+        h1 {
+          background-color: $soapy-bath-water;
+          display: inline-block;
+          padding: 0 20px;
+        }
+
+      }
+
+      #bio {
+        margin-top: 20px;
+
+        .image {
+          text-align: center;
+          margin-top: 20px;
+
+          img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 50%;
+            border: 10px solid $king-purple;
+          }
+
+        }
+
+        .bio {
+          margin-top: 30px;
+
+          h5 {
+            line-height: 24px;
+            max-width: 550px;
+            margin: 0 auto;
+          }
+
+        }
+
+      }
+
+    }
+
+    section {
+
+      &#fulltime, &#wips {
+        background-image: url('../images/confectionary.png');
+        padding: 20px 0;
+        margin-bottom: 30px;
+        box-shadow: 0 0 20px #b8b8b8;
+      }
+
+      .sectionHeader {
+
+        h2 {
+          color: $leaf;
+          margin-left: 15px;
+        }
+
+      }
+
+      .projects {
+
+        .project {
+          margin-bottom: 40px;
+
+          .projectName {
+
+          }
+
+          .projectImage {
+
+            img {
+              width: 100%;
+            }
+
+          }
+
+          .projectLink {
+
+            a {
+              color: $day-sky;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 }
